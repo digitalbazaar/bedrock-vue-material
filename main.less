@@ -1,0 +1,84 @@
+/*
+ * Bedrock form style
+ *
+ * Copyright (c) 2012-2018 Digital Bazaar, Inc. All rights reserved.
+ */
+@form-font-size: 14px;
+
+/* Forms */
+.form-horizontal .radio-inline,
+.form-horizontal .checkbox-inline {
+  vertical-align: baseline;
+}
+br-form-group > .section h4.headline {
+  margin-top: 0;
+}
+br-form-group br-form-group > .section {
+  border-top: thin solid #c4c4c4;
+  /*border-bottom: thin solid #c4c4c4;
+  margin-bottom: 10px;*/
+}
+br-form-group br-form-group > .section h4.headline {
+  border-top: none;
+  margin-top: 0;
+}
+br-form-group br-form-group > .section h4.headline {
+  font-size: @form-font-size;
+}
+
+/* Omit dt field name and remove dd indention */
+br-form-group dt.collapsed {
+  display: none;
+}
+br-form-group dd.collapsed {
+  margin-left: 0;
+}
+
+/* Angular material adjustments */
+br-form-control md-input-container label:not(.md-container-ignore).md-required:after {
+  content: none
+}
+br-form-control md-input-container label:not(.md-container-ignore).md-required .br-form-control-label:after {
+  content: ' *'
+}
+.br-form-control-validation-errors {
+  font-size: floor((@form-font-size * 0.75));
+}
+// br-form-control md-input-container,
+// br-select md-input-container {
+//   /* remove bottom margin; md-errors-spacer takes care of it */
+//   margin: 18px 0 0 0;
+// }
+br-select md-select {
+  margin: 20px 0 0 0;
+}
+.br-select md-option .highlight {
+  color: rgb(121,134,203);
+}
+/* .br-select cribbed from angular-material select header demo */
+.br-select {
+  .br-select-header-searchbox {
+    border: none;
+    outline: none;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+  }
+  .br-select-header {
+    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1), 0 0 0 0 rgba(0, 0, 0, 0.14), 0 0 0 0 rgba(0, 0, 0, 0.12);
+    padding-left: 10.667px;
+    height: 48px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: auto;
+  }
+  md-content._md {
+    max-height: 240px;
+  }
+}
+
+.form-inline br-select {
+  display: inline-block;
+}

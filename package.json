@@ -1,0 +1,20 @@
+{
+  "name": "bedrock-vue-material",
+  "version": "0.1.0-0",
+  "description": "Vue Material for Bedrock Web Apps",
+  "main": "index.js",
+  "less": "main.less",
+  "dependencies": {
+    "vue-material": "^1.0.0-beta-8"
+  },
+  "peerDependencies": {
+    "vue": "^2.5.16"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/digitalbazaar/bedrock-vue-material"
+  },
+  "bedrock": {
+    "browserDependencies": "all"
+  }
+}
